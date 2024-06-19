@@ -1,0 +1,8 @@
+spring.application.name: jms-examples
+
+spring.activemq:
+  broker-url: vm://localhost?broker.persistent=false
+  user: admin
+  password: admin
+
+spring.jms.template.default-destination: my-destination
