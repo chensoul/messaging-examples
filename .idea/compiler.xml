@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-amqp" />
+        <module name="rabbitmq-advance-consumer" />
+        <module name="rabbitmq-consumer" />
+        <module name="rabbitmq-advance-publisher" />
+        <module name="kafka-consumer" />
+        <module name="kafka-producer" />
+        <module name="spring-jms" />
+        <module name="rabbitmq-producer" />
+        <module name="collector" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="collector" options="-parameters" />
+      <module name="kafka" options="" />
+      <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-producer" options="-parameters" />
+      <module name="messaging-examples" options="" />
+      <module name="rabbitmq-advance-consumer" options="-parameters" />
+      <module name="rabbitmq-advance-publisher" options="-parameters" />
+      <module name="rabbitmq-consumer" options="-parameters" />
+      <module name="rabbitmq-producer" options="-parameters" />
+      <module name="spring-amqp" options="-parameters" />
+      <module name="spring-jms" options="-parameters" />
+    </option>
+  </component>
+</project>
