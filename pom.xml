@@ -18,10 +18,11 @@
     <description>messaging-examples</description>
 
     <modules>
-        <module>spring-jms</module>
-        <module>spring-amqp</module>
-        <module>kafka</module>
+        <module>activemq</module>
         <module>rabbitmq</module>
+        <module>kafka</module>
+        <module>spring-jms-activemq</module>
+        <module>spring-amqp-rabbitmq</module>
     </modules>
 
     <dependencies>

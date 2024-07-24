@@ -1,9 +1,13 @@
 services:
   activemq:
-    image: apache/activemq-classic:5.17.6
-    container_name: activemq
+    image: apache/activemq-classic:5.16.7
     environment:
       - "TZ=Asia/Shanghai"
+    volumes:
+      - activemq_data:/opt/apache-activemq/data
     ports:
       - "61616:61616"
       - "8161:8161"
+
+volumes:
+  activemq_data:
